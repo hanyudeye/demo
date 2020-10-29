@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <account></account>
+
+        <section>
+            <div name="header" v-on:click="onmsg">
+                {{ app.title}}
+            </div>
+            <div v-if="app.showtime" id="time" name="time">
+                {{app.time}}
+            </div>
+
+            <div v-for="color in app.colors">
+                {{color}}
+            </div>
+        </section>
+    </div>
+</body>
+<script src="vue.js"></script>
+
+</html>
